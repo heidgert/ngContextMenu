@@ -102,7 +102,7 @@
                      * @return {Object}
                      */
                     function getModel() {
-                        return model ? $angular.extend(scope, model.$modelValue) : scope;
+                        return model ? $angular.extend(scope, {model: model.$modelValue}) : scope;
                     }
 
                     /**
